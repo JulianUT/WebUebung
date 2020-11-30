@@ -33,7 +33,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="Reiter.html">Reiter</a></li>
                                 <li class="list-group-item"><a href="Aufgaben.html">Aufgaben</a></li>
-                                <li class="list-group-item"><a href="Mitglieder.html">Mitglied</a></li>
+                                <li class="list-group-item"><a href="Personen.html">Mitglied</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,36 +43,26 @@
 
 
             <!--Hauptkomponente -->
-            <div class="col">
+            <div class="col-9">
                 <div class="row">
-
                     <div class="col">
-                        <div class="card">
-                            <div class="card-header">ToDo:</div>
-                            <ul class="list-group">
-                                <li class="list-group-item">HTML Datei erstellen (Max Mustermann)</li>
-                                <li  class="list-group-item">CSS Datei erstellen (Max Mustermann)</li>
-                            </ul>
+                    <form>
+                        <div class="form-group">
+                            <label for="Mail1">E-Mail-Adresse:</label>
+                            <input type="email" class="form-control" placeholder="E-Mail" id="Mail1">
                         </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                                <div class="card-header">Erledigt:</div>
-                            <ul class="list-group">
-                              <li class="list-group-item">PC eingeschaltet (Petra Müller)</li>
-                              <li  class="list-group-item">Kaffee trinken (Petra Müller)</li>
-                            </ul>
+                        <div class="form-group">
+                            <label for="Pass1">Passwort:</label>
+                            <input type="password" class="form-control"   placeholder="Passwort" id="Pass1">
                         </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                                <div class="card-header">Verschoben:</div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Lernen (Max Mustermann)</li>
-                            </ul>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="ch1">
+                            <label class="form-check-label" for="ch1">AGB akzeptieren</label>
                         </div>
+                        <button type="submit" class="btn btn-primary">Einloggen</button>
+                        <small class="form-text text-muted">Noch nicht registriert? <a href="">Registrierung</a></small>
+                        <small class="form-text text-muted">Da Login noch nicht implementiert ist: <a href="Aktuelles_Projekt.html">Überspringen</a></small>
+                    </form>
                     </div>
                 </div>
             </div>

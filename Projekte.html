@@ -33,7 +33,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="Reiter.html">Reiter</a></li>
                                 <li class="list-group-item"><a href="Aufgaben.html">Aufgaben</a></li>
-                                <li class="list-group-item"><a href="Mitglieder.html">Mitglied</a></li>
+                                <li class="list-group-item"><a href="Personen.html">Mitglied</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,36 +43,46 @@
 
 
             <!--Hauptkomponente -->
-            <div class="col">
+            <div class="col-9">
                 <div class="row">
 
                     <div class="col">
-                        <div class="card">
-                            <div class="card-header">ToDo:</div>
-                            <ul class="list-group">
-                                <li class="list-group-item">HTML Datei erstellen (Max Mustermann)</li>
-                                <li  class="list-group-item">CSS Datei erstellen (Max Mustermann)</li>
-                            </ul>
-                        </div>
-                    </div>
+                        <form>
+                            <div class="form-group">
+                                <h1>Projekt Auswählen</h1>
+                                <label for="proj1"></label>
+                                <select class="form-control" id="proj1">
+                                    <option selected disabled>-bitte Auswählen-</option>
+                                    <option>Webentwickling</option>
+                                    <option>Haushalt</option>
+                                    <option>Garten</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Auswählen</button>
+                                <button type="submit" class="btn btn-primary">Bearbeiten</button>
+                                <button type="submit" class="btn btn-danger">Löschen</button>
+                            </div>
+                        </form>
 
-                    <div class="col">
-                        <div class="card">
-                                <div class="card-header">Erledigt:</div>
-                            <ul class="list-group">
-                              <li class="list-group-item">PC eingeschaltet (Petra Müller)</li>
-                              <li  class="list-group-item">Kaffee trinken (Petra Müller)</li>
-                            </ul>
-                        </div>
-                    </div>
+                        <!--Bearbeiten/Erstellen -->
+                        <form>
+                            <div class="form-group">
+                                <h1>Projekt bearbeiten/erstellen:</h1>
+                                <label for="pName1">Projekt:</label>
+                                <input type="text" class="form-control" placeholder="Projekt" id="pName1">
+                            </div>
+                            <div class="form-group">
+                                <label for="pBeschreibung1">Projektbeschreibung:</label>
+                                <textarea type="text" class="form-control" placeholder="Beschreibung:" id="pBeschreibung1"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Speichern</button>
+                                <button type="submit" class="btn btn-info">Reset</button>
+                            </div>
 
-                    <div class="col">
-                        <div class="card">
-                                <div class="card-header">Verschoben:</div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Lernen (Max Mustermann)</li>
-                            </ul>
-                        </div>
+
+                        </form>
                     </div>
                 </div>
             </div>

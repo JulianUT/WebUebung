@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Aufgabenplaner</title>
-
-</head>
-
-<body>
-<div class="container-fluid">
-    <div  class="jumbotron">
-        <h1  style="text-align: center">Aufgabenplaner: Todos</h1>
-    </div>
-    <div class="row">
-
-
-            <!--Navigation -->
-            <div class="col-2">
-                <nav>
-                        <ul class="list-group">
-                            <li class="list-group-item"><a href="Login.php">Login</a></li>
-                            <li class="list-group-item"><a href="Projekte.php">Projekte</a></li>
-                            <li class="list-group-item"><a href="Aktuelles_Projekt.html">Aktuelles Projekt</a></li>
-                            <li class="list-group-item ml-4"><a href="Reiter.php">Reiter</a></li>
-                            <li class="list-group-item ml-4"><a href="Aufgaben.php">Aufgaben</a></li>
-                            <li class="list-group-item ml-4"><a href="Personen.php">Mitglied</a></li>
-                        </ul>
-                </nav>
-            </div>
+<?php
+$title = 'ToDo';
+?>
+<?php include("header.php"); ?>
+<?php include("nav.php"); ?>
 
 
             <!--Hauptkomponente -->
@@ -64,8 +39,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-</div>
-</body>
-</html>
+<?php include("footer.php"); ?>
+

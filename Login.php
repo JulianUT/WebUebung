@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Aufgabenplaner</title>
-
-</head>
-
-<body>
-<div class="container-fluid">
-    <div  class="jumbotron">
-        <h1  style="text-align: center">Aufgabenplaner: Login</h1>
-    </div>
-        <div class="row">
+<?php $title = 'Login';?>
+<?php include("header.php"); ?>
 
 
-            <!--Navigation -->
 
-
-            <!--Hauptkomponente -->
+<!--Hauptkomponente -->
             <div class="col">
                 <div class="row">
                     <div class="col">
@@ -37,13 +22,9 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Einloggen</button>
                         <small class="form-text text-muted">Noch nicht registriert? <a href="">Registrierung</a></small>
-                        <small class="form-text text-muted">Da Login noch nicht implementiert ist: <a href="Aktuelles_Projekt.html">Überspringen</a></small>
+                        <small class="form-text text-muted">Da Login noch nicht implementiert ist: <a href="Aktuelles_Projekt.php">Überspringen</a></small>
                     </form>
                     </div>
                 </div>
             </div>
-        </div>
-
-</div>
-</body>
-</html>
+<?php include("footer.php"); ?>
